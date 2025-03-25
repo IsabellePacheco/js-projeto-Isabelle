@@ -20,15 +20,14 @@
   <!-- Navegação -->
   
 <nav>
-    <ul class="navlist">
-      <li class="acitive"><a href="#home"></a></li>
-      <li><a href="#about">Sobre</a></li>
-      <li><a href="#skills">Habilidades</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="contact">Contato</a></li>
-    </ul>
-  </nav>
-
+  <ul class="navlist">
+    <li class="acitive"><a href="#home"></a></li>
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#skills">Habilidades</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="contact">Contato</a></li>
+  </ul>
+  
   <div>
     <ul class="social-network">
       <li>
@@ -50,6 +49,7 @@
     </ul>
   </div>
 
+</nav>
 <!-- icone do mobile -->
 
 <div class="bx bx-menu" id="menu-icon"></div>
@@ -94,16 +94,141 @@
 
     <!-- seçao habilidades -->
     <section class="skills" id="skills">
-      
+      <div class="line"></div>
+      <div class="tech">
+        <h2>TECNOLOGIAS</h2>
+        <div class="techs">
+          <div class="card">
+            <img src="img/html-icon.svg" alt="icone html">
+            <p>HTML</p>
+          </div>
+          <div class="card">
+            <img src="img/css-icon.svg" alt="icone css">
+            <p>CSS</p>
+          </div>
+          <div class="card">
+            <img src="img/js-icon.svg" alt="icone javascript">
+            <p>JavaScript</p>
+          </div>
+          <div class="card">
+            <img src="img/sql-icon.svg" alt="icone sql">
+            <p>SQL</p>
+          </div>
+          <div class="card">
+            <img src="img/git-icon.svg" alt="icone git">
+            <p>Git</p>
+          </div>
+        </div>
+      </div>
+    <div class="line"></div>
+    <div class="tool">
+      <h2>FERRAMENTAS</h2>
+      <div class="tools">
+        <div class="card">
+              <img src="img/github-icon.svg" alt="icone  github">
+              <p>GitHub</p>
+        </div>
+        <div class="card">
+              <img src="img/vs-code-icon.svg" alt="icone  github">
+              <p>VSCode</p>
+        </div>
+        <div class="card">
+              <img src="img/figma-icon.svg" alt="icone  github">
+              <p>Figma</p>
+          </div>
+        <div class="card">
+              <img src="img/notion-icon.svg" alt="icone  github">
+              <p>Notion</p>
+        </div>
+      </div>
+    </div>
     </section>
   
     <!-- Seção de Projetos -->
-   
-    <!-- Seção de Contato -->
+    
+    <section id="Projetos" class="projects">
+      <div class="line"></div>
+      <div class="main-text">
+        <h2>Meu <span>Projetos</span></h2>
+      </div>
 
+      <!-- carrossel -->
+      <div class="carousel-container">
+        <!-- botao navegacao -->
+        <button class="carousel-button prev" aria-label="Projeto anterior ">&#10094;</button>
+        <button class="carousel-button prev" aria-label="Proximo projeto ">&#10095;</button>
+        <!-- slides do carrosel -->
+        <div class="carousel-slides">
+          <!-- slide 1 - login-->
+          <div class="carousel-slide active">
+            <div class="row">
+              <img src="img/login-land-rover.png" alt="print pagina de login">
+              <div class="layer">
+                <h5>Tela de login</h5>
+                <p>Esse repositorio e uma atualização/melhoria do repositorio anterior "formulario-login". Nele utilizo apenas HTML e CSS. </p>
+              </div>
+            </div>
+          </div> 
+          <!-- cronometro -->
+          <div class="carousel-slide">
+            <div class="row">
+              <img src="img/cronometro.png" alt="print cronometro">
+              <div class="layer">
+                <h5>Relógio Digital</h5>
+                <p>Desenvolvido um relógio digital utilizando HTML, CSS e JS </p>
+              </div>
+            </div>
+          </div> 
+          <div class="carousel-slide">
+            <div class="row">
+              <img src="img/form.png" alt="pagina de form">
+              <div class="layer">
+                <h5>Formulario de avaliacao</h5>
+                <p>Desenvolvido formulario de avaliação de montoria</p>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+   
+  <!-- Seção de Contato -->
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <div class="main-text">
+          <h2>Entre em <span>contato</span></h2>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <!-- servico gratutito que envia os dados para o email desctiro abaixo -->
+        <form  id="contactForm" action="https://formubmit.co/seuemail.com" method="POST">
+          <input type="text" name="name" placeholder="Digite seu melhor nome" required>
+          <input type="emial" name="email" placeholder="Digite seu melhor e-mail" required>
+          <input type="hidden" name="_captcha" value="false">
+          <textarea type="text" name="text" cols="35" rows="10" placeholder="Como eu posso te ajudar? "required></textarea>
+          <br>
+          <input type="submit" value="enviar" class="submit" qrequired>
+        </form>
+        <!-- mensagem agradecimento -->
+        <div id="thankYouMessage"     class="thank-you-message">
+      Obrigado! Aguarde nosso retorno!
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Rodapé -->
+  <section class="end">
+    <div class="last-text">
+      <p>by CodeMaster Dev <img src="img/bussola.svg" alt="">Alguns direitos reservados.</p>
+    </div>
+
+    <div class="top">
+      <!-- seta adicionada do serviços boxicos -->
+       <a href="#home"> <i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </section>
 
   <!-- Scripts -->
   <script src="script.js"></script>
